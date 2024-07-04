@@ -4,7 +4,7 @@ import useFetch from './use-fetch';
 import LikesList from '../components/likes-list';
 
 function LikesPage() {
-	const { data: blogs, isPending, error } = useFetch('http://localhost:3001/blogs');
+	const { data: blogs, isPending, error } = useFetch('https://dogsterest-data.onrender.com/blogs');
 	return (
 		<main className="content">
 			{error && <div>{error}</div>}
