@@ -4,7 +4,7 @@ import useFetch from './use-fetch';
 import BlogList from '../components/blog-list';
 
 function HomePage() {
-	const { data: blogs, isPending, error } = useFetch('http://localhost:3001/blogs');
+	const { data: blogs, isPending, error } = useFetch('https://dogsterest-data.onrender.com/blogs');
 	return (
 		<main className="content">
 			{error && <div>{error}</div>}
