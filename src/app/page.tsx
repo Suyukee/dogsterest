@@ -1,11 +1,17 @@
+'use client';
+
+import { Provider } from 'react-redux';
 import Header from '../components/header';
 import HomePage from '../components/home-page';
+import { store } from '@/store/store';
 
 export default function Home() {
 	return (
-		<div className="wrapper">
-			<Header />
-			<HomePage />
-		</div>
+		<Provider store={store}>
+			<div className="wrapper">
+				<Header />
+				<HomePage />
+			</div>
+		</Provider>
 	);
 }

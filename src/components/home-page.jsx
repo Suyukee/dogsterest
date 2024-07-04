@@ -1,15 +1,13 @@
-'use client';
-
-import useFetch from './use-fetch';
 import BlogList from '../components/blog-list';
+import { useGetDogsQuery } from '@/store/dogs-api';
 
 function HomePage() {
-	const { data: blogs, isPending, error } = useFetch('https://dogsterest-data.onrender.com/blogs');
+	const { data = [], isLoading, error } = useGetDogsQuery();
 	return (
 		<main className="content">
 			{error && <div>{error}</div>}
-			{isPending && <div>Загрузка...</div>}
-			{blogs && <BlogList blogs={blogs} />}
+			{isLoading && <div>Загрузка...</div>}
+			{data && <BlogList blogs={data} />}
 		</main>
 	);
 }
