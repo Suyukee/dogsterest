@@ -1,15 +1,20 @@
-'use client';
-
 import { useGetDogsQuery } from '@/store/dogs-api';
-import LikesList from '../components/likes-list';
+import BlogList from './blog-list';
 
 function LikesPage() {
 	const { data = [], isLoading, error } = useGetDogsQuery();
+
+	const likesData = data.filter((blog) => {
+		if (blog.isLike) {
+			return blog;
+		}
+	});
+
 	return (
 		<main className="content">
 			{error && <div>{error}</div>}
 			{isLoading && <div>Загрузка...</div>}
-			{data && <LikesList blogs={data} />}
+			{data && <BlogList blogs={likesData} />}
 		</main>
 	);
 }
