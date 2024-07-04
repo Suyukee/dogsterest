@@ -1,0 +1,65 @@
+{
+	"blogs": [
+		{
+			"id": "1",
+			"imageUrl": "https://i.pinimg.com/originals/b4/c9/f8/b4c9f8699e6a63ba2d6d4d55c6d80b75.jpg",
+			"likes": 40,
+			"isLike": true
+		},
+		{
+			"id": "2",
+			"imageUrl": "https://polinka.top/pics3/uploads/posts/2023-11/1700210874_polinka-top-p-kartinki-labradorov-pinterest-33.jpg",
+			"isLike": false
+		},
+		{
+			"id": "3",
+			"imageUrl": "https://i.pinimg.com/originals/d6/a0/ba/d6a0ba5e6b380e29af585839f57e19b6.jpg",
+			"isLike": true
+		},
+		{
+			"id": "4",
+			"imageUrl": "https://pp.userapi.com/c836433/v836433603/686c/WiHG5k2ojsA.jpg",
+			"isLike": false
+		},
+		{
+			"id": "5",
+			"imageUrl": "https://polinka.top/pics3/uploads/posts/2023-11/1700210874_polinka-top-p-kartinki-labradorov-pinterest-33.jpg",
+			"isLike": true
+		},
+		{
+			"id": "6",
+			"imageUrl": "https://i.pinimg.com/originals/b4/c9/f8/b4c9f8699e6a63ba2d6d4d55c6d80b75.jpg",
+			"isLike": false
+		},
+		{
+			"id": "7",
+			"imageUrl": "https://get.wallhere.com/photo/animals-dog-baby-animals-mammal-vertebrate-dog-like-mammal-golden-retriever-dog-breed-group-carnivoran-dog-breed-retriever-goldendoodle-170472.jpg",
+			"isLike": true
+		},
+		{
+			"id": "8",
+			"imageUrl": "https://i.pinimg.com/originals/61/cb/3f/61cb3f8b904c44605c00a81d54cf2e33.jpg",
+			"isLike": false
+		},
+		{
+			"id": "9",
+			"imageUrl": "https://i.pinimg.com/originals/61/cb/3f/61cb3f8b904c44605c00a81d54cf2e33.jpg",
+			"isLike": false
+		},
+		{
+			"id": "10",
+			"imageUrl": "https://i.pinimg.com/736x/2f/3c/0b/2f3c0b34852efd55451ad4c7bb32751f.jpg",
+			"isLike": false
+		},
+		{
+			"id": "11",
+			"imageUrl": "https://i.pinimg.com/736x/b0/05/95/b005959416f9df8b21d0eb7980ddc8a2.jpg",
+			"isLike": false
+		},
+		{
+			"id": "12",
+			"imageUrl": "https://i.pinimg.com/736x/ac/e8/8b/ace88b96bd8b783751585ea4d3fbd0e5.jpg",
+			"isLike": false
+		}
+	]
+}
