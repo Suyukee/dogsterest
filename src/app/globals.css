@@ -29,7 +29,7 @@ a {
 
 .article {
 	width: auto;
-	column-count: 4;
+	column-count: 3;
 	column-gap: 10px;
 }
 
@@ -74,7 +74,7 @@ a {
 	background: none;
 }
 
-.blog-preview:hover img {
+.blog-preview:hover .img {
 	filter: brightness(40%);
 }
 
@@ -91,7 +91,8 @@ a {
 	display: block;
 }
 
-.blog-preview img {
+.blog-preview .img {
+	width: 100%;
 	height: auto;
 	border-radius: 20px;
 }

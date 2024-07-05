@@ -1,5 +1,7 @@
 function BlogList({ blogs }) {
-	function handleClick(blog) {}
+	function handleClick(blog) {
+		// useLikeDogMutation(blog);
+	}
 
 	return (
 		<article className="article">
@@ -12,7 +14,13 @@ function BlogList({ blogs }) {
 						></path>
 					</svg>
 
-					<img src={blog.imageUrl} width={250} height={250} />
+					{blog.imageUrl.substr(-3) === 'mp4' ? (
+						<video className="img" width={250} height={250} muted autoPlay loop>
+							<source src={blog.imageUrl} type="video/mp4" />
+						</video>
+					) : (
+						<img className="img" src={blog.imageUrl} width={250} height={250} />
+					)}
 				</button>
 			))}
 		</article>

@@ -7,7 +7,17 @@ export const dogsApi = createApi({
 		getDogs: build.query({
 			query: (limit = '') => `dogs?${limit && `_limit=${limit}`}`,
 		}),
+		likeDog: build.mutation({
+			query(data) {
+				const { id, ...body } = data;
+				return {
+					url: `post/${id}`,
+					method: 'PUT',
+					body,
+				};
+			},
+		}),
 	}),
 });
 
-export const { useGetDogsQuery } = dogsApi;
+export const { useGetDogsQuery, useLikeDogMutation } = dogsApi;
