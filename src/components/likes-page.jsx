@@ -1,20 +1,14 @@
-import { useGetDogsQuery } from '@/store/dogs-api';
 import BlogList from './blog-list';
 
 function LikesPage() {
-	const { data = [], isLoading, error } = useGetDogsQuery();
-
-	const likesData = data.filter((blog) => {
-		if (blog.isLike) {
-			return blog;
-		}
-	});
+	const json = window.localStorage.getItem('LIKE_DOG');
+	const likesData = JSON.parse(json);
+	console.log(likesData);
 
 	return (
 		<main className="content">
-			{error && <div>{error}</div>}
-			{isLoading && <div>Загрузка...</div>}
-			{data && <BlogList blogs={likesData} />}
+			{likesData && <BlogList blogs={likesData} />}
+			{!likesData && <div>Здесь пока ничего нет</div>}
 		</main>
 	);
 }

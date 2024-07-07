@@ -8,10 +8,10 @@ function Header({ all, likes }) {
 			<h1 className="header__logo">Dogsterest</h1>
 			<nav className="header__navbar">
 				<div className="navbar__menu">
-					<Link className={all && 'active'} href="/">
+					<Link className={all ? 'active' : ''} href="/">
 						Все собачки
 					</Link>
-					<Link className={likes && 'active'} href="/likes">
+					<Link className={likes ? 'active' : ''} href="/likes">
 						Любимые собачки
 					</Link>
 				</div>

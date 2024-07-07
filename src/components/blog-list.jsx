@@ -4,12 +4,12 @@ function BlogList({ blogs }) {
 	const [likeDog, { isError }] = useLikeDogMutation();
 
 	const handleLikeDog = async (blog) => {
-		const blogCopy = { ...blog };
-		blogCopy.isLike = !blogCopy.isLike;
-		blogCopy.isLike ? blogCopy.likes++ : blogCopy.likes--;
-		console.log(blogCopy);
-		window.localStorage.setItem(blogCopy.id, blogCopy.imageUrl);
-		await likeDog(blogCopy).unwrap();
+		if (!blog.isLike) {
+			const blogCopy = { ...blog };
+			blogCopy.isLike = true;
+			blogCopy.likes++;
+			await likeDog(blogCopy).unwrap();
+		}
 	};
 
 	return (

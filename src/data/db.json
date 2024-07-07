@@ -4,7 +4,7 @@
 			"id": "e68e8d8c-3374-4a51-b485-877835b52f47",
 			"imageUrl": "https://random.dog/e3bb196a-0153-4122-8725-24a085404495.gif",
 			"likes": 40,
-			"isLike": true
+			"isLike": false
 		},
 		{
 			"id": "ed6fd82c-b265-49c0-b4a5-6573691c2699",
@@ -16,7 +16,7 @@
 			"id": "0dd10655-2ca5-4ace-b82a-dec8a6022a1b",
 			"imageUrl": "https://random.dog/21109704-778c-4896-b2ab-7479a77026ed.mp4",
 			"likes": 21,
-			"isLike": true
+			"isLike": false
 		},
 		{
 			"id": "9a35488e-1a26-4a35-8171-5eeed9aea4ea",
@@ -28,7 +28,7 @@
 			"id": "939979b6-d0f9-45c6-b89d-c6ea8388e7b1",
 			"imageUrl": "https://random.dog/1b0ff1c9-ca34-43f2-bfe4-182ff6760166.jpg",
 			"likes": 15,
-			"isLike": true
+			"isLike": false
 		},
 		{
 			"id": "1e9b0eaa-c6ec-4f2d-8c9e-86af38450c00",
@@ -40,7 +40,7 @@
 			"id": "1178b76d-591a-4bcb-aa5b-eae338a3a54c",
 			"imageUrl": "https://random.dog/a731290a-3c35-42f0-a54d-e1ff89f02c1c.mp4",
 			"likes": 18,
-			"isLike": true
+			"isLike": false
 		},
 		{
 			"id": "51a86d5a-a5c4-444c-a1c4-e43d347d0cdd",
