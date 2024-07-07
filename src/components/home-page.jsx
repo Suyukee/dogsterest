@@ -1,5 +1,6 @@
 import BlogList from '../components/blog-list';
 import { useGetDogsQuery } from '@/store/dogs-api';
+import Preloader from '../components/preloader';
 
 function HomePage() {
 	const { data = [], isLoading, error } = useGetDogsQuery();
@@ -7,7 +8,7 @@ function HomePage() {
 	return (
 		<main className="content">
 			{error && <div>{error}</div>}
-			{isLoading && <div>Загрузка...</div>}
+			{isLoading && <Preloader />}
 			{data && <BlogList blogs={data} />}
 		</main>
 	);
