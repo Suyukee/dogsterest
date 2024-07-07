@@ -64,7 +64,7 @@ a {
 }
 
 /* Список блогов */
-.blog-preview {
+.article__blog-preview {
 	position: relative;
 	display: inline-block;
 	margin: 0 0 10px;
@@ -74,11 +74,11 @@ a {
 	cursor: pointer;
 }
 
-.blog-preview:hover .img {
+.article__blog-preview:hover .blog-preview__img {
 	filter: brightness(60%);
 }
 
-.blog-preview .likes {
+.blog-preview__likes {
 	position: absolute;
 	display: none;
 	top: calc(50% - 30px);
@@ -88,27 +88,21 @@ a {
 	font-size: 24px;
 }
 
-.blog-preview .likes svg {
+.likes__svg {
 	width: 35px;
 }
 
-.blog-preview:hover .likes {
+.article__blog-preview:hover .blog-preview__likes {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
 }
 
-.blog-preview .img {
+.blog-preview__img {
 	width: 100%;
 	height: auto;
 	border-radius: 20px;
-}
-
-.blog-preview__blog-title {
-	font-size: 20px;
-	color: #e60023;
-	margin-bottom: 8px;
 }
 
 /* Прелоадер */
