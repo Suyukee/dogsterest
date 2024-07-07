@@ -9,7 +9,7 @@ function Likes() {
 	return (
 		<Provider store={store}>
 			<div className="wrapper">
-				<Header />
+				<Header all={false} likes={true} />
 				<LikesPage />
 			</div>
 		</Provider>

@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<Provider store={store}>
 			<div className="wrapper">
-				<Header />
+				<Header all={true} likes={false} />
 				<HomePage />
 			</div>
 		</Provider>

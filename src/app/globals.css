@@ -52,15 +52,17 @@ a {
 
 .navbar__menu {
 	display: flex;
-	gap: 16px;
+	gap: 5px;
 }
 
 .navbar__menu a {
-	padding: 6px;
+	padding: 15px;
 }
 
-.navbar__menu a:hover {
-	color: #e60023;
+.active {
+	background: #000;
+	color: #fff;
+	border-radius: 25px;
 }
 
 /* Список блогов */
@@ -68,6 +70,7 @@ a {
 	position: relative;
 	display: inline-block;
 	margin: 0 0 10px;
+	padding: 3px;
 	width: 100%;
 	border: none;
 	background: none;
