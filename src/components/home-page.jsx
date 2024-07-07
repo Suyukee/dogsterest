@@ -1,7 +1,7 @@
-import BlogList from '../components/blog-list';
-import { useGetDogsQuery } from '@/store/dogs-api';
-import Preloader from '../components/preloader';
 import { useEffect } from 'react';
+import { useGetDogsQuery } from '@/store/dogs-api';
+import BlogList from '../components/blog-list';
+import Preloader from '../components/preloader';
 
 function HomePage() {
 	const { data = [], isLoading, error } = useGetDogsQuery();

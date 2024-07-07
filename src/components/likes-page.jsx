@@ -3,7 +3,6 @@ import BlogList from './blog-list';
 function LikesPage() {
 	const json = window.localStorage.getItem('LIKE_DOG');
 	const likesData = JSON.parse(json);
-	console.log(likesData);
 
 	return (
 		<main className="content">

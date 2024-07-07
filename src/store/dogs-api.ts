@@ -21,10 +21,12 @@ export const dogsApi = createApi({
 					  ]
 					: [{ type: 'Dogs', id: 'LIST' }],
 		}),
-		getPost: build.query<Post, number>({
-			query: (id) => `post/${id}`,
-			providesTags: (result, error, id) => [{ type: 'Dogs', id }],
-		}),
+
+		// getPost: build.query<Post, number>({
+		// 	query: (id) => `post/${id}`,
+		// 	providesTags: (result, error, id) => [{ type: 'Dogs', id }],
+		// }),
+
 		likeDog: build.mutation({
 			query(data) {
 				const { id, ...body } = data;
