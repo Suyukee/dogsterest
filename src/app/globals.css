@@ -78,17 +78,25 @@ a {
 	filter: brightness(40%);
 }
 
-.blog-preview svg {
+.blog-preview .likes {
 	position: absolute;
 	display: none;
-	top: calc(50% - 20px);
-	left: calc(50% - 20px);
-	width: 40px;
+	top: calc(50% - 30px);
+	left: calc(50% - 30px);
 	z-index: 2;
+	color: #aaa;
+	font-size: 24px;
 }
 
-.blog-preview:hover .svg {
-	display: block;
+.blog-preview .likes svg {
+	width: 35px;
+}
+
+.blog-preview:hover .likes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
 }
 
 .blog-preview .img {
